@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Assets/css/test.css">
+</head>
+
+<body>
+    <!-- <table style="width:80%" id="myTable">
+        <thead>
+            <tr style="background-color: blue;">
+                <th>WBS</th>
+                <th>Task Name</th>
+                <th>Duration (Day)</th>
+                <th>Start Date</th>
+                <th>Finish Date</th>
+                <th>Assign To</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="req">
+                <td>1</td>
+                <td>Requirement</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <div id="cont"></div>
+            <tr>
+                <td>
+                    <input type="button" value="Add new row" class="add-row" onclick="myCreateFunction()">
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Analyse</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Add new row" class="add-row" onclick="myCreateFunction()">
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Design</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Add new row" class="add-row">
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Development</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Add new row" class="add-row">
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Testing</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Add new row" class="add-row">
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Deployment</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Add new row" class="add-row">
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Maintenance</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Add new row" class="add-row">
+                </td>
+            </tr>
+        </tbody>
+    </table> -->
+    <!-- <input type="button" class="button" value="Add new row" onclick="addField();">
+    <input type="button" class="button" value="Delete row" onclick="deleteField();"> -->
+    <table id="myTable">
+        <thead>
+            <tr style="background-color: blue;">
+                <th>WBS</th>
+                <th>Task Name</th>
+                <th>Duration (day)</th>
+                <th>Start Date</th>
+                <th>Finish Date</th>
+                <th>Assign To</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Requirement</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="button" value="Add new row" onclick="addField();">
+                </td>
+                <td>
+                    <input type="button" class="button" value="Delete row" onclick="deleteField();">
+                </td>
+            </tr>
+            <!-- <tr>
+                <td>2</td>
+                <td>Analyse</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="button" value="Add new row" onclick="addField();">
+                </td>
+                <td>
+                    <input type="button" class="button" value="Delete row" onclick="deleteField();">
+                </td>
+            </tr> -->
+        </tbody>    
+        </table>
+
+    <!-- <form action="">
+        <label for="wbs">WBS: </label>
+        <input type="text" id="wbs">
+        <br>
+
+        <label for="task">Task Name: </label>
+        <input type="text" id="taskname">
+        <br>
+
+        <label for="dur">Duration: </label>
+        <input type="text" id="duration">
+        <br>
+
+        <label for="startdate">Start Date: </label>
+        <input type="date" id="startdate">
+        <br>
+
+        <label for="finishdate">Finish Date: </label>
+        <input type="date" id="finishdate">
+        <br>
+
+        <label for="assign">Assign To: </label>
+        <select id="assign">
+            <option >Quang Hiếu</option>
+            <option >Nguyễn Hải</option>
+            <option >Bảo Hoài</option>
+            <option >Nguyễn Long</option>
+            <option >Nguyễn Trí</option>
+        </select>
+        <br>
+
+        <input type="button" id="submit" value="Add new row">
+        <br>
+    </form>
+
+    <table id="table" style="width: 70%;">
+        <thead>
+            <tr style="background-color:aqua;">
+                <th>WBS</th>
+                <th>Task Name</th>
+                <th>Duration (Day)</th>
+                <th>Start Date</th>
+                <th>Finish Date</th>
+                <th>Assign To</th>
+            </tr>
+        </thead>
+    </table> -->
+
+
+</body>
+<!-- <script>
+    function myCreateFunction() {
+        var table = document.getElementById('myTable');
+        var columnLength = table.getElementsByTagName('tr')[0].children.length;
+        var tr = document.createElement('tr');
+        for (var i = 0; i < columnLength; i++) {
+            var td = document.createElement('td');
+            var text = document.createElement('input');
+            // var date = document.createElement('input');
+            text.type = 'text';
+            // text.type = 'date';
+            td.appendChild(text);
+            // td.appendChild(date);
+            tr.appendChild(td);
+        }
+        table.appendChild(tr);
+    }
+</script> -->
+
+<script type="text/javascript">
+    function addField (argument) {
+        var myTable = document.getElementById("myTable");
+        var currentIndex = myTable.rows.length;
+        var currentRow = myTable.insertRow(-1);
+
+        var linksBox1 = document.createElement("input");
+        linksBox1.setAttribute("name", + currentIndex);
+
+        var linksBox2 = document.createElement("input");
+        linksBox2.setAttribute("name", + currentIndex);
+
+        var linksBox3 = document.createElement("input");
+        linksBox3.setAttribute("name", + currentIndex);
+
+        var linksBox4 = document.createElement("input");
+        linksBox4.setAttribute("name", + currentIndex);
+
+        var linksBox5 = document.createElement("input");
+        linksBox5.setAttribute("name", + currentIndex);
+
+        var linksBox6 = document.createElement("input");
+        linksBox6.setAttribute("name", + currentIndex);
+
+
+        var addRowBox = document.createElement("input");
+        addRowBox.setAttribute("type", "button");
+        addRowBox.setAttribute("value", "Add another line");
+        addRowBox.setAttribute("onclick", "addField();");
+
+        var currentCell = currentRow.insertCell(-1);
+        currentCell.appendChild(linksBox1);
+
+        currentCell = currentRow.insertCell(-1);
+        currentCell.appendChild(linksBox2);
+
+        currentCell = currentRow.insertCell(-1);
+        currentCell.appendChild(linksBox3);
+
+        currentCell = currentRow.insertCell(-1);
+        currentCell.appendChild(linksBox4);
+
+        currentCell = currentRow.insertCell(-1);
+        currentCell.appendChild(linksBox5);
+
+        currentCell = currentRow.insertCell(-1);
+        currentCell.appendChild(linksBox6);
+    }
+
+    function deleteField() {
+        document.getElementById("myTable").deleteRow(-1);
+    }
+</script>
+
+<!-- <script>
+    document.getElementById("submit").onclick = function () {
+        // document.getElementById("table").style.display = "block";
+
+        var table = document.getElementById("table");
+        var row = table.insertRow(-1);
+        var wbs = row.insertCell(0);
+        var task = row.insertCell(1);
+        var dur = row.insertCell(2);
+        var startdate = row.insertCell(3);
+        var finishdate = row.insertCell(4);
+        var assign = row.insertCell(5);
+
+        wbs.innerHTML = document.getElementById("wbs").value;
+        task.innerHTML = document.getElementById("taskname").value;
+        dur.innerHTML = document.getElementById("duration").value;
+        startdate.innerHTML = document.getElementById("startdate").value;
+        finishdate.innerHTML = document.getElementById("finishdate").value;
+        assign.innerHTML = document.getElementById("assign").value;
+
+        return false;
+    }
+</script> -->
+
+</html>

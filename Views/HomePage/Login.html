@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/Assets/css/HomePage/Login.css">
+    <!-- link ho tro header, content -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Link ho tru footer -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-main"> 
+            <div class="header-left">
+                <!-- id: logo -->
+                <img class="header-logo" src="/Assets/img/logo.png" />
+                <!-- id: name-company -->
+                <h1 class="header-namelogo">Waterfall Process Management</h1>
+            </div>
+            <div class="header-right">
+                <nav class="header-right-menu">
+                <!-- id: name-menu -->
+                    <ul>
+                        <li><a href="./Home.html"title="pagehome.html" target="_self" >Home</a></li>
+                        <li><a href="./Contact.html"title="pagecontact.html"target="_self">Contact</a></li>
+                        <li><a href="./Address.html" title="address.html" target="_self">Address</a></li>
+                    </ul>
+                </nav>
+                <!-- id: icon-login -->
+                <div class="header-right-login">
+                    <ul>
+                        <li><a href="#"title="Loginpage.html"target="_self">Login</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <div class="content-container">
+        <div class="cc-imglogin">
+            <img class="cc-imgloginbr" src="/Assets/img/Imglogin.jpg" alt="">
+        </div>
+        <div class="cc-formlogin">
+            <form class="cc-formlogin1" action="#">
+                <div><h1 class="cc-fl-titleform">Welcome to Waterfall Process Management Support System</h1></div>
+                <div class="cc-fl-inputbox">
+                    <label for="">User name</label>
+                    <input type="text" id="userName" name="userName" placeholder="Enter input user name">
+                </div>
+                <div class="cc-fl-inputbox">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter input password">
+                    <span class="eye" >
+                        <i id="hide1" class="fa-solid fa-eye"></i>
+                        <i id="hide2" class="fa-solid fa-eye-slash"></i>
+                    </span>
+                </div>
+                <div class="cc-fl-inputbtn">
+                    <button type="button" >Login</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <!-- end content container -->
+    <!-- --------------footer---------------- -->
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Branches</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Phan Chu Trinh, Binh Thanh district, HCM City</a></li>
+                                <li><a href="#">Tran Phu, Phu, Phuoc Ninh district, Da Nang City</a></li>
+                                <li><a href="#">Mac Thai To, Yen Hoa distrcit, Ha Noi City</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Contact us</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Email: stscompany@gmail.com</a></li>
+                                <li><a href="#">Phone: (+84)123654789</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Teams</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Nguyễn Quang Hiếu</a></li>
+                                <li><a href="#">Nguyễn Hải</a></li>
+                                <li><a href="#">Đặng Nguyễn Bảo Hoài</a></li>
+                                <li><a href="#">Huỳnh Ngọc Long</a></li>
+                                <li><a href="#">Nguyễn Trí</a></li>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Follow Us</h4>
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="icoYoutube" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2022 - Company STS. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    const eye = document.querySelector(".eye");
+    eye.addEventListener("click",eyeFunction)
+    function eyeFunction()
+    {
+        const passwordjs= document.querySelector("#password");
+        const  hide1= document.querySelector("#hide1");
+        const hide2= document.querySelector("#hide2");
+        if(passwordjs.type === 'password')
+        {
+            passwordjs.type='text';
+            hide1.style.display='block';
+            hide2.style.display='none';
+        }
+        else{
+            passwordjs.type='password';
+            hide1.style.display='none';
+            hide2.style.display='block';
+        }
+    }
+</script>
+</html>
