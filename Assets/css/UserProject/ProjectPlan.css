@@ -190,6 +190,40 @@ html{
 }
 
 /**************************** ID:CONTAINER *****************************/
+.import-file-project-plan{
+    text-align: center;
+    width: 180px;
+    margin: 25px 0 0 40px;
+    background-color:#2A4B9A;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.fa-solid{
+    font-size: 20px;
+    border-radius: 10px;
+}
+.import-file{
+    display: flex;
+    justify-content:space-around;
+    background-color:#2A4B9A;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.import-file:hover{
+    cursor: pointer;
+    background-color:#5151d6;
+}
+.form-project-plan{
+    background-color: #FFF;
+    width: 95%;
+    border-radius: 0.25rem;
+    border-radius: 10px;
+    margin: 25px auto 0px auto;
+    border: 2px solid rgba(2, 2, 5, 0.342);
+    box-shadow: 5px 5px 8px #172B5B;
+}
 .title-name-page{
     color: #000000;
     font-size: 26px;
@@ -200,10 +234,10 @@ html{
 }
 .requirement-form, .analyse-form, .design-form, .development-form, .testing-form, .deployment-form, .maintenance-form{
     background-color: #FFF;
-    width: 95%;
+    width: 98%;
     border-radius: 0.25rem;
     border-radius: 10px;
-    margin: 25px auto 0px auto;
+    margin: 25px auto 25px auto;
     border: 2px solid rgba(2, 2, 5, 0.342);
     box-shadow: 5px 5px 8px #172B5B;
 }
@@ -241,20 +275,20 @@ form input, button{
     font-size: 14px;
     font-family: Perpetua,Baskerville,Big Caslon,Palatino Linotype,Palatino,URW Palladio L,Nimbus Roman No9 L,serif; 
 }
-.input-form button{
+.input-form div{
     color: #ffffff;
-    /* float: right; */
     font-size: 14px;
     background: #2A4B9A;
+    padding: 10px 10px;
+    text-align: center;
     border: none;
     width: 100px;
     border-radius: 10px;
     border: none;
     outline: none !important;
-    /* margin-left: 10px; */
     font-weight: 700;
 }
-.input-form button:hover{
+.input-form div:hover{
     background: #5151d6;
     cursor: pointer;
 }
@@ -318,12 +352,13 @@ table.table td i {
     justify-content: space-evenly;
     align-items: center;
 }
-.form-btn button{
+.form-btn div{
     padding:10px 30px;
     border-radius: 10px;
     background-color: #2A4B9A;
     width: 200px;
     color:white;
+    text-align: center;
     border: none;
     font-size: 18px;
     font-weight: 800;
@@ -333,7 +368,7 @@ table.table td i {
     border: none;
     outline: none !important;
 }
-.form-btn button:hover{
+.form-btn div:hover{
     background: #5151d6;
     cursor: pointer;
 }
@@ -401,7 +436,7 @@ footer {
   .social-network a.icoLinkedin:hover i {
     color: #fff;
   }
-  
+
   .social-network a.socialIcon:hover,
   .socialHoverClass {
     color: #44BCDD;

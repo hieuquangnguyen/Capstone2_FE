@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="/Assets/css/UserProject/Reports.css">
+    <!-- create pagination for job table -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js "></script>
+    
+    <!-- ---------------------icoin edit for solution table----------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- ----------------------------footer table---------------------- -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <!--------------------------------------------------------- HEADER_TOP----------------------------------------------------------->
+
+        <div class="header__top">
+            <div class="header__left">
+                <img class="header__logo" src="/Assets/img/logo.png" />
+                <h1 class="header__name-logo">Waterfall Process Management</h1>
+            </div>
+            <div class="header__right">
+                <div class="info-user">
+                    <img src="https://pbs.twimg.com/profile_images/1444887714818527232/C000gSHW_400x400.jpg" class="img-user">
+                    <div class="info-people">
+                        <h2 class="name-user">Quang Hiếu</h2>
+                        <h3 class="role-user">Project Manage</h3>
+                    </div>
+                </div>
+                <div class="info__icon-logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+            </div>
+        </div>
+        <div class="header__name-project">
+            <p>Capstone 2</p>
+        </div>
+        <div class="header__menu">
+            <ul >
+                <li><a href="./ProjectManageDetail.html"> Project Manage</a></li>
+                <li><a href="./MemberManage.html" >Member Manage</a></li>
+                <li><a href="#" style="background-color: #fff; color: black;"> Reports</a></li>
+                <li><a href="#"> Track Progess</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <!--------------------------------------------------------- CONTAINER ----------------------------------------------------------->
+    <div class="container">
+        <!--------------------------------------------------------- CONTENT ----------------------------------------------------------->
+        <div class="header_content">
+            <div class="header_btnleft">
+                <div>
+                    <h2>You can export the report by:</h2>
+                    <div class="report-week-month">
+                        <a href="">Weekly</a>
+                        <a href="">Monthly</a>    
+                    </div>
+                </div>
+            </div>
+            <div class="header_btnright">
+                <div class="header_export">Export File</div>
+            </div>
+        </div>
+
+        <div class="body-reports">
+                    <!-- enter report info basic-->
+        <div class="content">
+            <h2 class="content_title">Weekly Report</h2>
+            <form action="#">
+                <div>
+                    <label for="fullName">Full Name</label>
+                    <input type="text"  name="fullName" placeholder="Quang Hiếu">    
+                </div>
+                <div>
+                    <label for="position">Role</label>
+                    <input type="text"  name="position" placeholder="Project Manager">
+                </div>
+                <div>
+                    <label for="projectname">Project Name</label>
+                    <input type="text" name="projectname" placeholder="Waterfall Manager">
+                </div>
+                <div>
+                    <label for="startday">Start Date</label>
+                    <input type="text" name="startdau" placeholder="21/03/2022">
+                </div>
+                <div>
+                    <label for="endday">End Date</label>
+                    <input type="text" name="endday" placeholder="21/06/2022">
+                </div>
+                <div class="label_des">
+                    <label for="describeproject">Describe Project</label>
+                    <textarea type="text" style="width: 90%;" name="describeproject" placeholder="project management in 7 steps of the waterfall process"> </textarea>
+                </div>
+            </form>
+        </div>
+         <!-- END enter report info basic-->
+        <!-- ---------------------------------------------sidebar-------------------------------- -->
+        <!--table-->
+        <div class="sidebar">
+            <table class="table">
+                <thead>
+                    <tr class="header-table">
+                        <th style="width: 10%;">Id</th>
+                        <th style="width: 10%;">TaskName</th>						
+                        <th style="width: 10%;">Start Day</th>
+                        <th style="width: 10%;">End Day</th>
+                        <th style="width: 10%;">Duration</th>
+                        <th style="width: 10%;">Status</th>
+                        <th style="width: 10%; text-align: center;">Solution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>CODE FE “Login”</td>
+                        <td>30/03/2022</td>                        
+                        <td>03/04/2022</td>
+                        <td>3 Days</td>
+                        <td>Done</td>
+                        <td>
+                            <input type="text" style="width:100%"placeholder="Enter solution">
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!-- end table -->
+        </div>
+
+
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.table').DataTable({
+                ordering: false,
+                searching: false,
+                lengthMenu: [[5, 10, 15, 20, -1], [5, 10, 15, 20, "All"]],
+            });
+        });
+    </script>
+</body>
+
+</html>
